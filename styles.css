@@ -147,12 +147,29 @@ body {
 .author__grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; }
 .author__text h2 { margin: 0 0 8px; font-size: clamp(26px, 3vw, 36px); }
 .author__text p { margin: 0; color: #333; }
+.socials { margin-top: 10px; display: inline-flex; gap: 10px; flex-wrap: wrap; }
+.socials a { text-decoration: none; color: #0c0d0d; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(0,0,0,0.12); background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); font-weight: 600; }
+.socials a:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); transform: translateY(-1px); }
 .author__sig { position: relative; padding: 24px; background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 18px; box-shadow: 0 14px 40px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 140px; }
 .author__sig::before { content: ""; position: absolute; inset: 12px; border-radius: 14px; background: radial-gradient(500px 120px at 50% 110%, rgba(43,216,143,0.15), transparent); pointer-events: none; }
 .signature { position: relative; font-family: 'Caveat', cursive; font-weight: 700; font-size: clamp(32px, 6vw, 52px); color: #1d1514; letter-spacing: 1px; transform: rotate(-2deg); text-shadow: 0 2px 0 rgba(0,0,0,0.06); }
 @media (max-width: 900px) {
   .author__grid { grid-template-columns: 1fr; }
 }
+
+/* Storytelling section */
+.story { background: linear-gradient(180deg, #fff, rgba(255,255,255,0)); }
+.story__stack { display: grid; gap: 16px; }
+.story__card { padding: clamp(14px, 2.6vw, 22px) clamp(16px, 3vw, 26px); border: 1px solid rgba(0,0,0,0.06); border-radius: 18px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.05); }
+.story__card h2 { margin: 0 0 6px; font-size: clamp(22px, 3vw, 34px); }
+.story__card p { margin: 0; }
+.story__list { margin: 0; padding-left: 1.1em; }
+.story__list li { margin: 4px 0; }
+.story--blue { background: linear-gradient(135deg, #e7f3ff, #fff); }
+.story--sky { background: linear-gradient(135deg, #eaf7ff, #fff); }
+.story--mint { background: linear-gradient(135deg, #eafaea, #fff); }
+.story--butter { background: linear-gradient(135deg, #fff7df, #fff); }
+.story--lilac { background: linear-gradient(135deg, #f1ecff, #fff); }
 
 /* Responsive */
 @media (max-width: 1100px) {
