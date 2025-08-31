@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Time Farm — Cute Productivity Timer</title>
+    <meta name="description" content="Time Farm is a cute productivity timer. Finish a focus session, unlock a new pet, and grow your farm while getting things done." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Time Farm — Cute Productivity Timer" />
+    <meta property="og:description" content="Finish a focus session, unlock a new pet, and grow your farm." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="assets/og-cover.svg" />
+
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Time Farm home">
+          <span class="brand-mark">🐾</span>
+          <span>Time Farm</span>
+        </a>
+        <div class="nav-cta">
+          <a class="btn btn--ghost" href="#features">Features</a>
+          <a class="btn" href="#download">Get the App</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="section hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <h1>Get things done in a fun way</h1>
+            <p>Finish a focus session, unlock a new pet, and grow your cozy farm. Time Farm makes productivity cute and rewarding.</p>
+            <div class="cta-row">
+              <a class="btn btn--lg" href="#download">Get Time Farm</a>
+              <a class="btn btn--lg btn--ghost" href="#waitlist">Join waitlist</a>
+            </div>
+            <p class="subtle">Available soon on iOS. Android in exploration.</p>
+          </div>
+          <div class="hero__visual">
+            <img src="assets/feature-hero.svg" alt="Time Farm app preview on a phone" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="section features">
+        <div class="container features__list">
+          <article class="feature">
+            <div class="feature__visual">
+              <img src="assets/feature-1.svg" alt="Get a new pet for every completed task" />
+            </div>
+            <div class="feature__copy">
+              <h2>Get a new pet for completed tasks</h2>
+              <p>Each successful focus session brings a surprise pet to your farm. Keep up the streaks and meet them all.</p>
+            </div>
+          </article>
+
+          <article class="feature feature--alt">
+            <div class="feature__visual">
+              <img src="assets/feature-2.svg" alt="Fun and delightful timer" />
+            </div>
+            <div class="feature__copy">
+              <h2>Delightful focus timer</h2>
+              <p>Tap to start, stay on task, and watch the timer cheer you on. Simple and friendly by design.</p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__visual">
+              <img src="assets/feature-3.svg" alt="Unlock pets and grow your farm" />
+            </div>
+            <div class="feature__copy">
+              <h2>Unlock pets. Grow your farm.</h2>
+              <p>Collect cats, dogs, birds, and more. Your little farm becomes a living display of your progress.</p>
+            </div>
+          </article>
+
+          <article class="feature feature--alt">
+            <div class="feature__visual">
+              <img src="assets/feature-4.svg" alt="Track progress with calendar heatmap" />
+            </div>
+            <div class="feature__copy">
+              <h2>Track your progress</h2>
+              <p>See your consistency at a glance with a calming calendar heatmap and helpful stats.</p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__visual">
+              <img src="assets/feature-5.svg" alt="Widgets to keep you focused from anywhere" />
+            </div>
+            <div class="feature__copy">
+              <h2>Stay focused from anywhere</h2>
+              <p>Home Screen and Lock Screen widgets keep the timer visible and the motivation close.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Download / Waitlist -->
+      <section id="download" class="section download">
+        <div class="container download__card">
+          <h2>Be first to try Time Farm</h2>
+          <p>Drop your email and we’ll invite you as soon as TestFlight is ready.</p>
+          <form id="waitlist" class="waitlist-form" novalidate>
+            <label class="visually-hidden" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+            <button class="btn btn--lg" type="submit">Join waitlist</button>
+          </form>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+          <div class="store-badges">
+            <!-- Replace with real store links when ready -->
+            <a class="badge" href="#" aria-label="App Store coming soon"> App Store (soon)</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq">
+        <div class="container">
+          <h2>FAQ</h2>
+          <details>
+            <summary>What platforms are supported?</summary>
+            <p>iOS first via TestFlight and App Store. Android is being explored.</p>
+          </details>
+          <details>
+            <summary>Is Time Farm free?</summary>
+            <p>Core focus timer is free. Optional upgrades may arrive later to support development.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <strong>Time Farm</strong>
+          <div class="subtle">Made with care for productive days.</div>
+        </div>
+        <div class="footer__links">
+          <a href="#top">Home</a>
+          <a href="#features">Features</a>
+          <a href="#download">Get the App</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>

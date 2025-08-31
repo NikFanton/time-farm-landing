@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dcf9da"/>
+      <stop offset="1" stop-color="#f7faf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <g transform="translate(250,120)">
+    <rect rx="60" ry="60" width="700" height="660" fill="#0f172a" opacity="0.08"/>
+    <rect x="20" y="20" rx="48" ry="48" width="660" height="620" fill="#ffffff"/>
+    <circle cx="350" cy="180" r="120" fill="#2bd88f" opacity="0.2"/>
+    <text x="350" y="340" text-anchor="middle" font-family="Inter, system-ui" font-size="36" fill="#111">Time Farm App Preview</text>
+    <text x="350" y="385" text-anchor="middle" font-family="Inter, system-ui" font-size="20" fill="#555">Replace with real screenshot</text>
+    <text x="350" y="430" text-anchor="middle" font-family="Inter, system-ui" font-size="18" fill="#2b7c58">assets/feature-hero.svg</text>
+  </g>
+</svg>
+
