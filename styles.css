@@ -133,6 +133,8 @@ body {
 
 /* Download */
 .download__card { background: var(--card); border: 1px solid rgba(0,0,0,0.06); border-radius: 22px; padding: clamp(16px, 3vw, 26px); box-shadow: 0 12px 36px rgba(0,0,0,0.06); text-align: center; }
+.download__card h2 { margin: 0 0 14px; }
+.download__card p { margin: 0; }
 .waitlist-form { display: grid; grid-template-columns: 1fr auto; gap: 10px; margin-top: 16px; }
 .waitlist-form input { font: inherit; padding: 14px 16px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.12); outline: none; min-width: 240px; }
 .waitlist-form input:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(43,216,143,0.2); }
@@ -239,7 +241,7 @@ body {
 
 .science { background: linear-gradient(180deg, rgba(255,255,255,0), #fff); }
 .science__card { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 22px; box-shadow: 0 12px 36px rgba(0,0,0,0.06); padding: clamp(16px, 3vw, 26px); }
-.science__content h2 { margin: 0 0 4px; font-size: clamp(22px, 2.6vw, 28px); }
+.science__content h2 { margin: 0 0 14px; font-size: clamp(22px, 2.6vw, 28px); }
 .science__content p { margin: 0; }
 .science__media img { width: clamp(70px, 12vw, 110px); height: auto; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.1)); }
 @media (max-width: 900px) {
