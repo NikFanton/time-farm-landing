@@ -183,3 +183,16 @@ body {
   .feature { grid-template-columns: 1fr; }
   .waitlist-form { grid-template-columns: 1fr; }
 }
+.how { background: linear-gradient(180deg, #fff, rgba(255,255,255,0)); }
+.how__card { background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 22px; box-shadow: 0 12px 36px rgba(0,0,0,0.06); padding: clamp(16px, 3vw, 26px); display: grid; grid-template-columns: 1fr; gap: 16px; }
+.how__content h2 { margin: 0 0 8px; font-size: clamp(26px, 3.2vw, 36px); }
+.how__steps { margin: 0; padding-left: 1.2em; }
+.how__steps li { margin: 6px 0; }
+.how__media { border: 1px solid rgba(0,0,0,0.06); border-radius: 18px; overflow: hidden; background: linear-gradient(180deg, #f8fbff, #eef8ff); }
+.how-video { display: block; width: 100%; height: auto; border-radius: 18px; object-fit: cover; }
+
+.science { background: linear-gradient(180deg, rgba(255,255,255,0), #fff); }
+.science__card { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.05); padding: clamp(12px, 2.2vw, 18px); }
+.science__content h2 { margin: 0 0 4px; font-size: clamp(22px, 2.6vw, 28px); }
+.science__content p { margin: 0; }
+.science__media img { width: 110px; height: auto; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.1)); }
