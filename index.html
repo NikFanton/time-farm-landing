@@ -10,24 +10,27 @@
     <meta property="og:title" content="Time Farm — Cute Productivity Timer" />
     <meta property="og:description" content="Finish a focus session, unlock a new pet, and grow your farm." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://example.com" />
+    <meta property="og:url" content="https://timefarm.productive-lab.com" />
     <meta property="og:image" content="assets/og-cover.svg" />
+    <link rel="canonical" href="https://timefarm.productive-lab.com" />
+    <meta name="apple-itunes-app" content="app-id=6738962950" />
 
     <link rel="icon" href="assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav">
         <a class="brand" href="#top" aria-label="Time Farm home">
-          <span class="brand-mark">🐾</span>
+          <img src="assets/logo/logo_5_dark_transparant.png" alt="Time Farm logo" height="28" style="display:inline-block"/>
           <span>Time Farm</span>
         </a>
         <div class="nav-cta">
-          <a class="btn btn--ghost" href="#features">Features</a>
+          <a class="btn btn--ghost" href="https://productive-lab.com/time-farm/support" target="_blank" rel="noopener">Support</a>
+          <a class="btn btn--ghost" href="https://productive-lab.com" target="_blank" rel="noopener">Other apps</a>
           <a class="btn" href="#download">Get the App</a>
         </div>
       </nav>
@@ -41,104 +44,92 @@
             <h1>Get things done in a fun way</h1>
             <p>Finish a focus session, unlock a new pet, and grow your cozy farm. Time Farm makes productivity cute and rewarding.</p>
             <div class="cta-row">
-              <a class="btn btn--lg" href="#download">Get Time Farm</a>
-              <a class="btn btn--lg btn--ghost" href="#waitlist">Join waitlist</a>
+              <a class="badge" href="https://apps.apple.com/app/id6738962950" target="_blank" rel="noopener" aria-label="Download on the App Store"> Download on the App Store</a>
             </div>
-            <p class="subtle">Available soon on iOS. Android in exploration.</p>
+            <p class="subtle">Now available on iOS. Android in exploration.</p>
           </div>
           <div class="hero__visual">
-            <img src="assets/feature-hero.svg" alt="Time Farm app preview on a phone" />
+            <img src="assets/previews/preview-1.png" alt="Time Farm app preview on a phone" />
           </div>
         </div>
       </section>
 
       <!-- Features -->
-      <section id="features" class="section features">
-        <div class="container features__list">
-          <article class="feature">
-            <div class="feature__visual">
-              <img src="assets/feature-1.svg" alt="Get a new pet for every completed task" />
-            </div>
-            <div class="feature__copy">
-              <h2>Get a new pet for completed tasks</h2>
-              <p>Each successful focus session brings a surprise pet to your farm. Keep up the streaks and meet them all.</p>
-            </div>
-          </article>
+      <section id="features" class="section features features--modern">
+        <div class="container">
+          <div class="feature-grid">
+            <!-- Card 1: Big left -->
+            <article class="f-card span-7">
+              <div class="f-media">
+                <img src="assets/onboarding/farm.png" alt="A group of cute pets appear on your farm after focus sessions" />
+              </div>
+              <div class="f-body">
+                <h3>Get a pet for every completed task</h3>
+                <p>Finish a session and welcome a new friend to your farm. Keep the streak to meet them all.</p>
+              </div>
+            </article>
 
-          <article class="feature feature--alt">
-            <div class="feature__visual">
-              <img src="assets/feature-2.svg" alt="Fun and delightful timer" />
-            </div>
-            <div class="feature__copy">
-              <h2>Delightful focus timer</h2>
-              <p>Tap to start, stay on task, and watch the timer cheer you on. Simple and friendly by design.</p>
-            </div>
-          </article>
+            <!-- Card 2: Right column -->
+            <article class="f-card span-5">
+              <div class="f-media">
+                <img src="assets/onboarding/timer.png" alt="Delightful focus timer" />
+              </div>
+              <div class="f-body">
+                <h3>Delightful focus timer</h3>
+                <p>Tap to start, stay on task, and let the timer cheer you on.</p>
+              </div>
+            </article>
 
-          <article class="feature">
-            <div class="feature__visual">
-              <img src="assets/feature-3.svg" alt="Unlock pets and grow your farm" />
-            </div>
-            <div class="feature__copy">
-              <h2>Unlock pets. Grow your farm.</h2>
-              <p>Collect cats, dogs, birds, and more. Your little farm becomes a living display of your progress.</p>
-            </div>
-          </article>
+            <!-- Card 3: Small left bottom -->
+            <article class="f-card span-5">
+              <div class="f-media">
+                <img src="assets/onboarding/cat-scientist.png" alt="Track your progress" />
+              </div>
+              <div class="f-body">
+                <h3>Track your progress</h3>
+                <p>A simple calendar heatmap shows your consistency at a glance.</p>
+              </div>
+            </article>
 
-          <article class="feature feature--alt">
-            <div class="feature__visual">
-              <img src="assets/feature-4.svg" alt="Track progress with calendar heatmap" />
-            </div>
-            <div class="feature__copy">
-              <h2>Track your progress</h2>
-              <p>See your consistency at a glance with a calming calendar heatmap and helpful stats.</p>
-            </div>
-          </article>
-
-          <article class="feature">
-            <div class="feature__visual">
-              <img src="assets/feature-5.svg" alt="Widgets to keep you focused from anywhere" />
-            </div>
-            <div class="feature__copy">
-              <h2>Stay focused from anywhere</h2>
-              <p>Home Screen and Lock Screen widgets keep the timer visible and the motivation close.</p>
-            </div>
-          </article>
+            <!-- Card 4: Big right bottom -->
+            <article class="f-card span-7">
+              <div class="f-media">
+                <img src="assets/previews/preview-2.png" alt="Unlock pets and grow your farm" />
+              </div>
+              <div class="f-body">
+                <h3>Unlock pets. Grow your farm.</h3>
+                <p>Collect cats, dogs, birds, turtles, and more as your focus habit grows.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       <!-- Download / Waitlist -->
       <section id="download" class="section download">
         <div class="container download__card">
-          <h2>Be first to try Time Farm</h2>
-          <p>Drop your email and we’ll invite you as soon as TestFlight is ready.</p>
-          <form id="waitlist" class="waitlist-form" novalidate>
-            <label class="visually-hidden" for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@domain.com" required />
-            <button class="btn btn--lg" type="submit">Join waitlist</button>
-          </form>
-          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+          <h2>Download Time Farm</h2>
+          <p>Available on the App Store.</p>
           <div class="store-badges">
-            <!-- Replace with real store links when ready -->
-            <a class="badge" href="#" aria-label="App Store coming soon"> App Store (soon)</a>
+            <a class="badge" href="https://apps.apple.com/app/id6738962950" target="_blank" rel="noopener" aria-label="Download on the App Store"> Download on the App Store</a>
           </div>
         </div>
       </section>
 
-      <!-- FAQ -->
-      <section class="section faq">
-        <div class="container">
-          <h2>FAQ</h2>
-          <details>
-            <summary>What platforms are supported?</summary>
-            <p>iOS first via TestFlight and App Store. Android is being explored.</p>
-          </details>
-          <details>
-            <summary>Is Time Farm free?</summary>
-            <p>Core focus timer is free. Optional upgrades may arrive later to support development.</p>
-          </details>
+      <!-- Author -->
+      <section class="section author">
+        <div class="container author__grid">
+          <div class="author__text">
+            <h2>Made by Mykyta Huchenko</h2>
+            <p>I'm a solo app developer building apps that make life more fun and productive. Time Farm is my cozy take on staying focused.</p>
+          </div>
+          <div class="author__sig" aria-label="Signature of Mykyta Huchenko">
+            <div class="signature">— Mykyta Huchenko</div>
+          </div>
         </div>
       </section>
+
+      <!-- FAQ hidden for now -->
     </main>
 
     <footer class="site-footer">
@@ -151,6 +142,7 @@
           <a href="#top">Home</a>
           <a href="#features">Features</a>
           <a href="#download">Get the App</a>
+          <a href="https://productive-lab.com/time-farm/support" target="_blank" rel="noopener">Support</a>
         </div>
       </div>
     </footer>
