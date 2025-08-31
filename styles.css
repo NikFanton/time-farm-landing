@@ -42,8 +42,9 @@ body {
   display: flex; align-items: center; justify-content: space-between;
   padding: 14px 20px; background: rgba(255,255,255,0.7); border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-.brand { display: inline-flex; gap: 10px; align-items: center; text-decoration: none; color: inherit; font-weight: 800; font-size: 18px; }
+.brand { display: inline-flex; gap: 12px; align-items: center; text-decoration: none; color: inherit; font-weight: 800; font-size: clamp(20px, 2.2vw, 26px); }
 .brand-mark { font-size: 20px; }
+.brand img { height: clamp(32px, 3.2vw, 40px); width: auto; }
 .nav-cta { display: flex; gap: 10px; }
 
 /* Buttons */
@@ -79,7 +80,8 @@ body {
 .hero .container { background: rgba(255,255,255,0.7); border: 1px solid rgba(0,0,0,0.06); border-radius: 28px; padding: clamp(20px, 3vw, 32px); box-shadow: 0 30px 80px rgba(0,0,0,0.08); }
 .hero__visual { align-self: center; justify-self: end; }
 .hero__visual { position: relative; }
-.hero__visual img { width: min(420px, 100%); max-height: min(70svh, 640px); height: auto; border-radius: 26px; box-shadow: 0 30px 80px rgba(0,0,0,0.12); animation: levitate 6s ease-in-out infinite; }
+.hero__visual img,
+.hero__visual video { width: min(420px, 100%); max-height: min(70svh, 640px); height: auto; border-radius: 26px; box-shadow: 0 30px 80px rgba(0,0,0,0.12); animation: levitate 6s ease-in-out infinite; display: block; object-fit: cover; }
 .hero__visual::after { content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: -8px; width: 60%; height: 18px; filter: blur(10px); border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,0.25), transparent); opacity: 0.25; animation: shadowPulse 6s ease-in-out infinite; }
 
 @keyframes levitate {
@@ -156,7 +158,8 @@ body {
 @media (max-width: 1100px) {
   .hero__grid { grid-template-columns: 1fr; }
   .hero__visual { justify-self: center; }
-  .hero__visual img { width: min(82%, 520px); max-height: 58svh; }
+  .hero__visual img,
+  .hero__visual video { width: min(82%, 520px); max-height: 58svh; }
 }
 
 @media (max-width: 900px) {
