@@ -32,3 +32,6 @@ if (form) {
   });
 }
 
+// Footer: dynamic copyright year
+const y = document.getElementById('copyrightYear');
+if (y) y.textContent = String(new Date().getFullYear());
