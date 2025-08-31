@@ -171,6 +171,12 @@ body {
 .story--butter { background: linear-gradient(135deg, #fff7df, #fff); }
 .story--lilac { background: linear-gradient(135deg, #f1ecff, #fff); }
 
+/* Story: plain headline (no card container) */
+.story--plain { background: linear-gradient(135deg, #f7fbff, #fff); }
+.story--plain .story__plain { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+.story--plain h2 { margin: 0 0 6px; font-size: clamp(28px, 4vw, 46px); }
+.story--plain p { margin: 0; font-size: clamp(16px, 2vw, 18px); }
+
 /* Responsive */
 @media (max-width: 1100px) {
   .hero__grid { grid-template-columns: 1fr; }
@@ -184,12 +190,40 @@ body {
   .waitlist-form { grid-template-columns: 1fr; }
 }
 .how { background: linear-gradient(180deg, #fff, rgba(255,255,255,0)); }
-.how__card { background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 22px; box-shadow: 0 12px 36px rgba(0,0,0,0.06); padding: clamp(16px, 3vw, 26px); display: grid; grid-template-columns: 1fr; gap: 16px; }
-.how__content h2 { margin: 0 0 8px; font-size: clamp(26px, 3.2vw, 36px); }
+.section-title { margin: 0 0 14px; font-size: clamp(28px, 3.4vw, 40px); }
+.section-title--center { text-align: center; }
+.how__card { background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 22px; box-shadow: 0 12px 36px rgba(0,0,0,0.06); padding: clamp(16px, 3vw, 26px); }
+.how__card + .how__card { margin-top: 14px; }
+.how__card--farm { grid-template-columns: 0.9fr 1.1fr; }
+.how__content h3 { margin: 0 0 8px; font-size: clamp(22px, 2.6vw, 28px); }
 .how__steps { margin: 0; padding-left: 1.2em; }
 .how__steps li { margin: 6px 0; }
 .how__media { border: 1px solid rgba(0,0,0,0.06); border-radius: 18px; overflow: hidden; background: linear-gradient(180deg, #f8fbff, #eef8ff); }
-.how-video { display: block; width: 100%; height: auto; border-radius: 18px; object-fit: cover; }
+.how__media img, .how__media video { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 18px; }
+.how__media--wide { aspect-ratio: 16 / 9; }
+.how-video { width: 100%; height: 100%; }
+
+@media (max-width: 980px) {
+  .how__media--wide { aspect-ratio: auto; }
+}
+
+/* New lightweight How it works layout */
+.how__grid { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.steps li { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; font-size: clamp(16px, 2.2vw, 20px); color: inherit; }
+.steps .icon { width: auto; height: auto; background: none; border-radius: 0; color: inherit; display: inline-grid; place-items: center; font-size: 22px; font-weight: 700; line-height: 1; }
+.how__shot { width: clamp(160px, 26vw, 260px); border-radius: 12px; display: block; }
+.how__farmIntro { text-align: center; margin-top: 24px; }
+.how__farmIntro h3 { margin: 0 0 6px; font-size: clamp(22px, 2.6vw, 28px); }
+.how__media { border: 1px solid rgba(0,0,0,0.06); border-radius: 18px; overflow: hidden; background: linear-gradient(180deg, #f8fbff, #eef8ff); margin-top: 10px; }
+.how__media--wide { aspect-ratio: 16 / 9; }
+.how__media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+@media (max-width: 980px) {
+  .how__grid { grid-template-columns: 1fr; }
+  .how__shot { justify-self: center; }
+  .how__media--wide { aspect-ratio: auto; }
+}
 
 .science { background: linear-gradient(180deg, rgba(255,255,255,0), #fff); }
 .science__card { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.05); padding: clamp(12px, 2.2vw, 18px); }

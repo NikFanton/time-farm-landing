@@ -55,28 +55,34 @@
       </section>
 
       <!-- Storytelling flow (text only, lightweight) -->
-      <section id="story" class="section story">
-        <div class="container story__stack">
-          <article class="story__card story--blue">
-            <h2>Struggle to focus? It doesn’t have to be.</h2>
-            <p>Distractions are everywhere — but with a friendly companion and simple structure, staying on track feels easier and more fun.</p>
-          </article>
+      <section id="story" class="section story story--plain">
+        <div class="story__plain">
+          <h2>Struggle to focus? It doesn’t have to be.</h2>
+          <p>Distractions are everywhere — but with a friendly companion and simple structure, staying on track feels easier and more fun.</p>
         </div>
       </section>
 
       <!-- How it works + farm preview -->
       <section id="how" class="section how">
-        <div class="container how__card">
-          <div class="how__content">
-            <h2>How it works</h2>
-            <ol class="how__steps">
-              <li>Pick a pet to focus with you</li>
-              <li>Choose how long you want to focus</li>
-              <li>Stay on task and earn a new friend</li>
-            </ol>
+        <div class="container">
+          <h2 class="section-title section-title--center">How it works</h2>
+
+          <div class="how__card">
+            <div class="how__grid">
+              <ul class="steps" aria-label="Steps to use Time Farm">
+                <li><span class="icon paw" aria-hidden="true">🐾</span><span>Pick an animal to focus with you.</span></li>
+                <li><span class="icon timer" aria-hidden="true">⏱</span><span>Choose how long you want to focus.</span></li>
+                <li><span class="icon check" aria-hidden="true">✓</span><span>Focus on your tasks!</span></li>
+              </ul>
+              <img class="how__shot" src="assets/onboarding/timer.png" alt="Timer and pet picker" />
+            </div>
           </div>
-          <div class="how__media">
-            <video class="how-video" src="assets/video/ScreenRecording_08-30-2025 16-55-23_1.mov" poster="assets/onboarding/farm.png" autoplay muted loop playsinline aria-label="Farm preview"></video>
+
+          <div class="how__farmIntro">
+            <h3>With each focus session, your farm grows</h3>
+          </div>
+          <div class="how__media how__media--wide">
+            <video class="how-video" src="assets/video/ScreenRecording_08-31-2025 iPad.MP4" poster="assets/onboarding/farm.png" autoplay muted loop playsinline aria-label="Farm preview"></video>
           </div>
         </div>
       </section>
