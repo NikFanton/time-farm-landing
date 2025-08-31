@@ -3,23 +3,65 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Time Farm — Cute Productivity Timer</title>
-    <meta name="description" content="Time Farm is a cute productivity timer. Finish a focus session, unlock a new pet, and grow your farm while getting things done." />
+    <title>Time Farm — Cute Pomodoro Timer with Pets</title>
+    <meta name="description" content="Time Farm is a cute Pomodoro-style productivity timer. Finish a focus session, unlock a new pet, and grow your farm while getting things done." />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#2bd88f" />
+    <meta name="color-scheme" content="light" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Time Farm — Cute Productivity Timer" />
+    <meta property="og:title" content="Time Farm — Cute Pomodoro Timer with Pets" />
     <meta property="og:description" content="Finish a focus session, unlock a new pet, and grow your farm." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://timefarm.productive-lab.com" />
+    <meta property="og:site_name" content="Time Farm" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:image" content="assets/og-cover.svg" />
+    <meta property="og:image:alt" content="Time Farm — cute productivity timer with pets and a cozy farm" />
     <link rel="canonical" href="https://timefarm.productive-lab.com" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NikFanton" />
+    <meta name="twitter:creator" content="@NikFanton" />
+    <meta name="twitter:title" content="Time Farm — Cute Pomodoro Timer with Pets" />
+    <meta name="twitter:description" content="Finish a focus session, unlock a new pet, and grow your farm." />
+    <meta name="twitter:image" content="assets/og-cover.svg" />
+
     <meta name="apple-itunes-app" content="app-id=6738962950" />
 
     <link rel="icon" href="assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/logo/logo_5_5.jpeg" />
+    <link rel="mask-icon" href="assets/favicon.svg" color="#2bd88f">
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Time Farm",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "iOS",
+      "description": "Time Farm is a cute Pomodoro-style productivity timer. Finish a focus session, unlock a new pet, and grow your farm while getting things done.",
+      "url": "https://timefarm.productive-lab.com",
+      "inLanguage": "en",
+      "image": "https://timefarm.productive-lab.com/assets/og-cover.svg",
+      "downloadUrl": "https://apps.apple.com/app/id6738962950",
+      "publisher": {
+        "@type": "Person",
+        "name": "Mykyta Huchenko",
+        "sameAs": [
+          "https://x.com/NikFanton",
+          "https://www.instagram.com/guchenych/",
+          "https://www.youtube.com/channel/UCxXWPA1MRXlrBMa3BgYmEqg"
+        ]
+      }
+    }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -77,13 +119,13 @@
                 <li><span class="icon timer" aria-hidden="true">⏱</span><span>Choose how long you want to focus.</span></li>
                 <li><span class="icon check" aria-hidden="true">✓</span><span>Focus on your tasks!</span></li>
               </ul>
-              <img class="how__shot" src="assets/onboarding/timer.png" alt="Timer and pet picker" />
+              <img class="how__shot" src="assets/onboarding/timer.png" alt="Timer and pet picker" loading="lazy" />
             </div>
             <div class="how__farmIntro">
               <h3>With each focus session, your farm grows</h3>
             </div>
             <div class="how__media how__media--wide">
-              <video class="how-video" src="assets/video/ScreenRecording_08-31-2025 iPad.MP4" autoplay muted loop playsinline aria-label="Farm preview"></video>
+              <video class="how-video" src="assets/video/ScreenRecording_08-31-2025 iPad.MP4" autoplay muted loop playsinline preload="metadata" aria-label="Farm preview"></video>
             </div>
           </div>
         </div>
@@ -94,7 +136,7 @@
         <div class="container">
           <div class="science__card">
             <div class="science__media" aria-hidden="true">
-              <img src="assets/onboarding/cat-scientist-2.png" alt="" />
+              <img src="assets/onboarding/cat-scientist-2.png" alt="" loading="lazy" />
             </div>
             <div class="science__content">
               <h2>Backed by science</h2>
