@@ -228,6 +228,8 @@ body {
 .section-title--center { text-align: center; }
 .how__card { background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 22px; box-shadow: 0 12px 36px rgba(0,0,0,0.06); padding: clamp(16px, 3vw, 26px); }
 .how__card + .how__card { margin-top: 14px; }
+.how__features { display: grid; gap: 14px; margin-top: 14px; }
+.how__features .how__card + .how__card { margin-top: 0; }
 .how__card--farm { grid-template-columns: 0.9fr 1.1fr; }
 .how__content h3 { margin: 0 0 8px; font-size: clamp(22px, 2.6vw, 28px); }
 .how__steps { margin: 0; padding-left: 1.2em; }
@@ -257,6 +259,10 @@ body {
   .how__grid { grid-template-columns: 1fr; }
   .how__shot { justify-self: center; }
   .how__media--wide { aspect-ratio: auto; }
+}
+
+@media (min-width: 768px) {
+  .how__features { grid-template-columns: repeat(2, 1fr); }
 }
 
 .science { background: linear-gradient(180deg, rgba(255,255,255,0), #fff); }
