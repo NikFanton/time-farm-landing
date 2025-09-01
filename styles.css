@@ -76,13 +76,13 @@ body {
   text-decoration: none;
   color: inherit;
   font-weight: 800;
-  font-size: clamp(20px, 2.2vw, 26px);
+  font-size: clamp(25px, 2.75vw, 33px);
 }
 .brand-mark {
   font-size: 20px;
 }
 .brand img {
-  height: clamp(32px, 3.2vw, 40px);
+  height: clamp(40px, 4vw, 50px);
   width: auto;
 }
 .nav-cta {
@@ -665,7 +665,7 @@ body {
     padding: 10px 12px;
   }
   .brand img {
-    height: 28px;
+    height: 35px;
   }
   .nav-cta .btn--ghost,
   .nav-cta .nav-link {
