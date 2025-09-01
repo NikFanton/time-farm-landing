@@ -249,7 +249,8 @@ body {
 .how__grid { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .steps li { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; font-size: clamp(16px, 2.2vw, 20px); color: inherit; }
-.steps .icon { width: auto; height: auto; background: none; border-radius: 0; color: inherit; display: inline-grid; place-items: center; font-size: 22px; font-weight: 700; line-height: 1; }
+.steps .icon { width: 24px; height: 24px; background: none; border-radius: 0; color: inherit; display: inline-grid; place-items: center; }
+.steps .icon svg { width: 100%; height: 100%; display: block; }
 .how__shot { width: clamp(160px, 26vw, 260px); border-radius: 12px; display: block; }
 .how__farmIntro { text-align: center; margin-top: 24px; }
 .how__farmIntro h3 { margin: 0 0 6px; font-size: clamp(22px, 2.6vw, 28px); }
