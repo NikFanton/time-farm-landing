@@ -37,27 +37,42 @@ const y = document.getElementById('copyrightYear');
 if (y) y.textContent = String(new Date().getFullYear());
 
 // Hero video: play iPhone1 then iPhone2 sequentially
-document.addEventListener('DOMContentLoaded', () => {
-  const heroVideo = /** @type {HTMLVideoElement|null} */(document.querySelector('.hero-video'));
-  if (!heroVideo) return;
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroVideo = /** @type {HTMLVideoElement|null} */(document.querySelector('.hero-video'));
+    if (!heroVideo) return;
 
-  const playlist = [
-    'assets/video/iPhone1.mp4',
-    'assets/video/iPhone2.mp4',
-  ];
-  let current = 0;
+    const placeholder = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjA2IiBoZWlnaHQ9IjI2MjIiPjxyZWN0IHdpZHRoPSIxMjA2IiBoZWlnaHQ9IjI2MjIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=';
+    heroVideo.poster = placeholder;
 
-  // Ensure desired attributes
-  heroVideo.loop = false;
-  heroVideo.muted = true;
-  heroVideo.playsInline = true;
-  heroVideo.autoplay = true;
+    const playlist = [
+      'assets/video/iPhone1.mp4',
+      'assets/video/iPhone2.mp4',
+    ];
+    let current = 0;
 
-  const playCurrent = () => {
-    heroVideo.src = playlist[current];
-    // Attempt immediate play; ignore promise rejection (autoplay policies already satisfied due to muted)
-    heroVideo.play().catch(() => {});
-  };
+    // Ensure desired attributes
+    heroVideo.loop = false;
+    heroVideo.muted = true;
+    heroVideo.playsInline = true;
+    heroVideo.autoplay = true;
+    heroVideo.preload = 'auto';
+
+    // Preload videos to keep playback seamless when switching
+    const cache = playlist.map((src) => {
+      const v = document.createElement('video');
+      v.src = src;
+      v.preload = 'auto';
+      v.load();
+      return v;
+    });
+
+    const playCurrent = () => {
+      heroVideo.poster = placeholder;
+      heroVideo.src = cache[current].src;
+      heroVideo.load();
+      // Attempt immediate play; ignore promise rejection (autoplay policies already satisfied due to muted)
+      heroVideo.play().catch(() => {});
+    };
 
   heroVideo.addEventListener('ended', () => {
     current = (current + 1) % playlist.length;
