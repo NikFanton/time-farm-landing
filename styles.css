@@ -76,13 +76,13 @@ body {
   text-decoration: none;
   color: inherit;
   font-weight: 800;
-  font-size: clamp(20px, 2.2vw, 26px);
+  font-size: clamp(30px, 3.3vw, 39px);
 }
 .brand-mark {
   font-size: 20px;
 }
 .brand img {
-  height: clamp(32px, 3.2vw, 40px);
+  height: clamp(48px, 4.8vw, 60px);
   width: auto;
 }
 .nav-cta {
