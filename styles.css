@@ -98,7 +98,7 @@ body {
 }
 
 .hero__visual video {
-  aspect-ratio: 9 / 19.5;
+  aspect-ratio: 201 / 437;
   background-color: #000;
 }
 .hero__visual::after { content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: -8px; width: 60%; height: 18px; filter: blur(10px); border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,0.25), transparent); opacity: 0.25; animation: shadowPulse 6s ease-in-out infinite; }
