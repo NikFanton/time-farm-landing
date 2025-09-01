@@ -203,12 +203,12 @@ body {
 .story--plain p { margin: 0; font-size: clamp(16px, 2vw, 18px); }
 
 /* Responsive */
-@media (max-width: 980px) {
-  .hero__grid { grid-template-columns: 1fr; }
-  .hero__visual { justify-self: center; }
-  .hero__visual img,
-  .hero__visual video { width: min(82%, 520px); height: 58svh; }
-}
+  @media (max-width: 980px) {
+    .hero__grid { grid-template-columns: 1fr; }
+    .hero__visual { justify-self: center; }
+    .hero__visual img,
+    .hero__visual video { width: min(420px, 100%); height: 58svh; }
+  }
 
 @media (max-width: 900px) {
   .feature { grid-template-columns: 1fr; }
