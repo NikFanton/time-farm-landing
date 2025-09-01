@@ -88,8 +88,7 @@ body {
 .hero__visual img,
 .hero__visual video {
   width: min(420px, 100%);
-  max-height: min(70svh, 640px);
-  height: auto;
+  height: min(70svh, 640px);
   border-radius: 26px;
   box-shadow: 0 30px 80px rgba(0,0,0,0.12);
   animation: levitate 6s ease-in-out infinite;
@@ -208,7 +207,7 @@ body {
   .hero__grid { grid-template-columns: 1fr; }
   .hero__visual { justify-self: center; }
   .hero__visual img,
-  .hero__visual video { width: min(82%, 520px); max-height: 58svh; }
+  .hero__visual video { width: min(82%, 520px); height: 58svh; }
 }
 
 @media (max-width: 900px) {
