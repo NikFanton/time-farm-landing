@@ -11,6 +11,21 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   });
 });
 
+// Header Get the App button: link directly to the store if it's the only option
+(() => {
+  const btn = document.getElementById('getAppButton');
+  if (!btn) return;
+  const stores = document.querySelectorAll('.store-badges a');
+  if (stores.length === 1) {
+    const href = stores[0].getAttribute('href');
+    if (href) {
+      btn.href = href;
+      btn.target = '_blank';
+      btn.rel = 'noopener';
+    }
+  }
+})();
+
 // Simple waitlist form UX (local-only)
 const form = document.getElementById('waitlist');
 const msg = document.getElementById('formMessage');
