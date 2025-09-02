@@ -45,8 +45,8 @@ if (y) y.textContent = String(new Date().getFullYear());
     heroVideo.poster = placeholder;
 
     const playlist = [
-      'assets/video/iPhone1.mp4',
-      'assets/video/iPhone2.mp4',
+      'assets/video/iPhone1.mov',
+      'assets/video/iPhone2.mov',
     ];
     let current = 0;
 

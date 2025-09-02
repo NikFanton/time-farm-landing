@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-  <rect width="1200" height="800" fill="#E2DBFF"/>
-  <text x="600" y="360" text-anchor="middle" font-family="Inter, system-ui" font-size="44" fill="#121">Track your progress</text>
-  <text x="600" y="410" text-anchor="middle" font-family="Inter, system-ui" font-size="24" fill="#334">Calendar heatmap and stats</text>
-  <text x="600" y="460" text-anchor="middle" font-family="Inter, system-ui" font-size="18" fill="#2b7c58">Replace with screenshot → assets/feature-4.svg</text>
-</svg>
-
