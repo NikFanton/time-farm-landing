@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-  <rect width="1200" height="800" fill="#FFF6D3"/>
-  <text x="600" y="360" text-anchor="middle" font-family="Inter, system-ui" font-size="44" fill="#121">Unlock pets</text>
-  <text x="600" y="410" text-anchor="middle" font-family="Inter, system-ui" font-size="24" fill="#334">Grow your cozy farm</text>
-  <text x="600" y="460" text-anchor="middle" font-family="Inter, system-ui" font-size="18" fill="#2b7c58">Replace with screenshot → assets/feature-3.svg</text>
-</svg>
-
