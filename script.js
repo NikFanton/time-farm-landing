@@ -2,7 +2,7 @@
 document.querySelectorAll('a[href^="#"]').forEach((a) => {
   a.addEventListener('click', (e) => {
     const id = a.getAttribute('href');
-    if (!id || id === '#') return;
+    if (!id || id === '#' || !id.startsWith('#')) return;
     const el = document.querySelector(id);
     if (el) {
       e.preventDefault();
@@ -50,6 +50,21 @@ if (form) {
 // Footer: dynamic copyright year
 const y = document.getElementById('copyrightYear');
 if (y) y.textContent = String(new Date().getFullYear());
+
+// Adjust "Get the App" links depending on available stores
+document.addEventListener('DOMContentLoaded', () => {
+  const download = document.getElementById('download');
+  if (!download) return;
+  const appStore = download.querySelector('a.badge[href*="apps.apple.com"]');
+  const android = download.querySelector('a.badge[href*="play.google.com"]');
+  if (appStore && !android) {
+    document.querySelectorAll('a[href="#download"]').forEach((link) => {
+      link.href = appStore.href;
+      link.target = '_blank';
+      link.rel = 'noopener';
+    });
+  }
+});
 
 // Hero video: play iPhone1 then iPhone2 sequentially
   document.addEventListener('DOMContentLoaded', () => {
