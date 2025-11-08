@@ -2,7 +2,9 @@
 
 Static landing page for the Time Farm app. No build step required — open `index.html` directly or serve the folder with any static host.
 
-Live app: https://apps.apple.com/app/id6738962950
+Live app:
+- App Store — https://apps.apple.com/app/id6738962950
+- Google Play — https://play.google.com/store/apps/details?id=com.productivelab.timeFarm&hl=en
 
 ## Replace the placeholders
 
@@ -16,13 +18,14 @@ Drop your final screenshots into `assets/` using the same file names to instantl
 - `assets/feature-5.svg` — Widgets keep you focused
 - `assets/og-cover.svg` — Open Graph preview (1200x630)
 - `assets/favicon.svg` — Favicon
+- `assets/previews/thumbnail.jpg` — Social preview image for X/Open Graph cards
 
 You can swap any of these for PNG/JPG files — just keep the same names and extensions referenced in `index.html`. The page also references your real assets in `assets/previews/` and `assets/onboarding/`.
 
 ## Customize copy & links
 
 - Update headlines and body copy in `index.html`.
-- Replace the App Store badge/link in the Download section once the app is live.
+- Update the store buttons in the Download section if the App Store or Google Play links change (icons live in `assets/icons/`).
 - The page now links directly to the App Store. If you want a waitlist again (e.g., for Android), re‑enable the form section in `index.html` and hook it up in `script.js`.
 
 ## Local preview
